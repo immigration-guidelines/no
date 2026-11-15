@@ -1,0 +1,949 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no">
+<head id="ctl00_Head1"><meta http-equiv="x-ua-compatible" content="IE=8" /><title>
+	
+        Rutiner for behandling av søknader om tilbakevendingsstøtte - UDIREGELVERK
+</title><meta name="keywords" /><meta name="author" /><meta name="rating" content="General" /><meta name="revisit-after" content="4 weeks" /><meta name="generator" content="EPiServer" /><meta name="robots" content="all" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="creation_date" content="Thu, 22 Sep 2011 11:22:00 GMT" /><meta name="last-modified" content="Wed, 04 Jul 2012 11:24:58 GMT" /><meta name="revised" content="Wed, 04 Jul 2012 11:24:58 GMT" /><meta http-equiv="Content-Language" content="no" />
+
+
+
+        <script type="text/javascript" src="/scripts/master.js"></script>
+        <link rel="stylesheet" href="/styles/master.css" type="text/css" />
+    
+        <link rel="stylesheet" href="/styles/REGELVERK/custom.css" type="text/css" />
+    <link rel="stylesheet" media="print" href="/styles/PrintMedia.css" type="text/css" />
+    
+
+    <script type="text/javascript">
+        function doHourglass() {
+            document.body.style.cursor = 'wait';
+        }  
+    </script>
+    
+    <script type="text/javascript">
+        function DisplayLoadingDiv()
+        {
+            document.getElementById("loading").style.display = 'block';
+            setTimeout('document.getElementById(\'loader\').src=\'../../../../Images/ajax-wait.gif\'', 500);
+        //displays the div
+        /*Inside this div place a loading.gif image*/
+        }
+
+        function HideLoadingDiv()
+        {
+          document.getElementById("loading").style.display ='none'; 
+        //Hide the div
+        }
+</script>
+
+</head>
+
+<body onunload="doHourglass();" onbeforeunload="doHourglass();" onload='HideLoadingDiv();'>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+    </script>
+               
+    
+    
+        
+    
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PBCN6W" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBCN6W');</script>
+        <!-- End Google Tag Manager -->       
+    
+    <form method="post" action="/no/rettskilder/udi-interne-meldinger/im-2011-021/" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_tsm_HiddenField" id="ctl00_tsm_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTM1NTgxMDczD2QWAmYPZBYEZhBkZBYGAgIPZBYCAgIPFgIeCV9wYWdlTGluaygpbEVQaVNlcnZlci5Db3JlLlBhZ2VSZWZlcmVuY2UsIEVQaVNlcnZlciwgVmVyc2lvbj02LjEuMzc5LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49OGZlODNkZWE3MzhiNDViNwBkAgQPFgIeB1Zpc2libGVnZAIGDxYCHwFnZAIDEGRkFgoCBQ9kFgJmD2QWAmYPZBYGAgEPFgIeC18hSXRlbUNvdW50AgQWCgIBD2QWAgIBDw8WCB4LTmF2aWdhdGVVcmwFNi9UZW1wbGF0ZXMvVWRpL1BhZ2VzL0RvY3VtZW50LmFzcHg/aWQ9OSZlcHNsYW5ndWFnZT1ubx4EVGV4dAUKUGVyc29udmVybh4HVG9vbFRpcAUSR8OlIHRpbCBQZXJzb252ZXJuHgZUYXJnZXRkZGQCAg9kFgICAQ8PFggfAwU2L1RlbXBsYXRlcy9VZGkvUGFnZXMvQXJjaGl2ZS5hc3B4P2lkPTE5JmVwc2xhbmd1YWdlPW5vHwQFBUFya2l2HwUFDUfDpSB0aWwgQXJraXYfBmRkZAIDD2QWAgIBDw8WCB8DBTUvVGVtcGxhdGVzL1VkaS9QYWdlcy9TaXRlbWFwLmFzcHg/aWQ9NSZlcHNsYW5ndWFnZT1ubx8EBQ1OZXR0c3RlZHNrYXJ0HwUFFUfDpSB0aWwgTmV0dHN0ZWRza2FydB8GZGRkAgQPZBYCAgEPDxYIHwMFNy9UZW1wbGF0ZXMvVWRpL1BhZ2VzL0RvY3VtZW50LmFzcHg/aWQ9MTcmZXBzbGFuZ3VhZ2U9bm8fBAULS29udGFrdCBvc3MfBQUTR8OlIHRpbCBLb250YWt0IG9zcx8GZGRkAgUPZBYGZg8VAQhTa3JpdiB1dGQCAQ8PFgQfBAUIU2tyaXYgdXQfBQUIU2tyaXYgdXRkZAICDxYCHwQFsAo8ZGl2IGNsYXNzPSJmb250c2l6ZS1ob3d0byIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyI+PGJ1dHRvbiBjbGFzcz0iY2xvc2UgbWluaW1hbCI+w5cgU2tqdWwgdmVpbGVkbmluZ2VuPC9idXR0b24+DQo8cD5Gb3Igw6UganVzdGVyZSB0ZWtzdHN0w7hycmVsc2VuLCBicnVrIG5ldHRsZXNlcmVucyBpbm5lYnlnZGUgem9vbWZ1bmtzam9uLiBTa3JpZnRzdMO4cnJlbHNlbiBrYW4gZGEgw7hrZXMgbWVkIGh1cnRpZ3Rhc3RlbmUgPHN0cm9uZz48a2JkPkN0cmw8L2tiZD48L3N0cm9uZz4rPHN0cm9uZz48a2JkPis8L2tiZD48L3N0cm9uZz4gb2cgcmVkdXNlcmVzIG1lZCA8c3Ryb25nPjxrYmQ+Q3RybDwva2JkPjwvc3Ryb25nPis8c3Ryb25nPjxrYmQ+LTwva2JkPjwvc3Ryb25nPi48L3A+DQo8cCBjbGFzcz0idCI+PHN0cm9uZz5BbHRlcm5hdGl2dDwvc3Ryb25nPjwvcD4NCjxkbD48ZHQ+PHN0cm9uZz5JbnRlcm5ldHQgRXhwbG9yZXI8L3N0cm9uZz48L2R0PjxkZD5WZWxnIGZhbmVuIDxzdHJvbmc+VmlzPC9zdHJvbmc+IOKGkiA8c3Ryb25nPlRla3N0c3TDuHJyZWxzZTwvc3Ryb25nPiDihpIgVmVsZyBlbiBhdiBkZSB0aWxnamVuZ2VsaWdlIHN0w7hycmVsc2VuZS48L2RkPjxkdD48c3Ryb25nPk1vemlsbGEgRmlyZWZveDwvc3Ryb25nPjwvZHQ+PGRkPlZlbGcgZmFuZW4gPHN0cm9uZz5WaXM8L3N0cm9uZz4g4oaSIDxzdHJvbmc+U2thbGVyaW5nPC9zdHJvbmc+IOKGkiBWZWxnIDxzdHJvbmc+U3TDuHJyZTwvc3Ryb25nPiBlbGxlciA8c3Ryb25nPk1pbmRyZTwvc3Ryb25nPiBza3JpZnQuPC9kZD48ZHQ+PHN0cm9uZz5PcGVyYTwvc3Ryb25nPjwvZHQ+PGRkPlZlbGcgPHN0cm9uZz5PcGVyYS1pa29uPC9zdHJvbmc+IOKGkiA8c3Ryb25nPlNpZGU8L3N0cm9uZz4g4oaSIDxzdHJvbmc+Wm9vbTwvc3Ryb25nPiDihpIgVmVsZyBzdMO4cnJlbHNlLjwvZGQ+PGR0PjxzdHJvbmc+Q2hyb21lPC9zdHJvbmc+PC9kdD48ZGQ+VmVsZyA8c3Ryb25nPlZlcmt0w7h5LWlrb248L3N0cm9uZz4g4oaSIFZlZCA8c3Ryb25nPlpvb208L3N0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ZAIED2QWAmYPDxYCHwFoZGQCBQ9kFgICAQ9kFgICAQ8PFgQfCWgfCwUHRGVmYXVsdGRkAg8PZBYGZg8PFgYfCWgfACgrBAEzHwsFB0RlZmF1bHRkZAIBDw8WBh8JaB8AKCsEATMfCwUHRGVmYXVsdGRkAgIPDxYGHwloHwAoKwQBMx8LBQdEZWZhdWx0ZGQYCAVGY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyTWFpbkFyZWFGcmFtZSRDb250ZW50JExhdGVzdExvZ0NoYW5nZXMkcGdsTGlzdA8PZmRkBStjdGwwMCRNYWluTWVudSRQYWdlTGlzdE90aGVyTGF3U291cmNlc1BhcnQyDw9mZGQFKGN0bDAwJE1haW5NZW51JFNlbnRyYWx0UmVnZWxWZXJrUGFnZUxpc3QPD2ZkZAUTY3RsMDAkY3RsMDIkUnNzTGlzdA8PZmRkBRtjdGwwMCRNYWluTWVudSRlbW5lUGFnZUxpc3QPD2ZkZAUmY3RsMDAkTWFpbk1lbnUkUGFnZUxpc3RPdGhlckxhd1NvdXJjZXMPD2ZkZAVlY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyTWFpbkFyZWFGcmFtZSRDb250ZW50JEFydGljbGVNYWluQm9keTEkQXR0YWNobWVudHMkRG9jdW1lbnRBdHRhY2htZW50cGFnZUxpc3QPD2ZkZAUgY3RsMDAkTWFpbk1lbnUkZW1uZVBhZ2VMaXN0UGFydDIPD2ZkZE7i3m60lFQGOEzq6wfMy6I+moXg" />
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = '{"name":"nb-NO","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"kr","NaNSymbol":"NaN","CurrencyNegativePattern":12,"NumberNegativePattern":1,"PercentPositivePattern":0,"PercentNegativePattern":0,"NegativeInfinitySymbol":"-INF","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":2,"PositiveInfinitySymbol":"INF","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402297199999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":2,"FullDateTimePattern":"d. MMMM yyyy HH:mm:ss","LongDatePattern":"d. MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d. MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd.MM.yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["sø","ma","ti","on","to","fr","lø"],"ShortestDayNames":["sø","ma","ti","on","to","fr","lø"],"DayNames":["søndag","mandag","tirsdag","onsdag","torsdag","fredag","lørdag"],"AbbreviatedMonthNames":["jan","feb","mar","apr","mai","jun","jul","aug","sep","okt","nov","des",""],"MonthNames":["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember",""],"IsReadOnly":false,"NativeCalendarName":"gregoriansk kalender","AbbreviatedMonthGenitiveNames":["jan","feb","mar","apr","mai","jun","jul","aug","sep","okt","nov","des",""],"MonthGenitiveNames":["januar","februar","mars","april","mai","juni","juli","august","september","oktober","november","desember",""]}}';//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=q5EzCxF8lFq7LE4OzzIZH3Ls-C-pA1jFsm0xm1za0XP6KnpCRNl-rJyAe76KGsF9gv7W9Ys6d5R58I_lHDQSuY1Lx0yIfidvmGYptTuJFJWJ2Yzr0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ULVaylOr3-tVHgzlOIzvR9BLu4JL7jzrI9UilmE7cbTAm9hstMh92GC8xwVqjdHgbvbQsYj4ayEECfDEdwE2OCopjTfEewAKgrgIKCQMMmdLcJx30&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=f0wWKhcozXDe7YSYsgxBNv1VvNqORLGIHPnysV1AkRKnBvgnXj4toCyEqkEUX-Umr9h0JpVDd5NUw43gb3eaG2UIjWks7vPoNnhKIg3FlFWAuwl1-N_SO1c4yKovnKuphQuVuA2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=lVXKS7KdXbkak2DdJjc1zq1rGdBY7gGaFbsWaC2-jDnp3X6CFzFkL8TDQSXgS_KCSSl0fs0Jrl8G-04kuiEj-YVX9d17LAm2ponykAGxtaPXuBoY1R84-QjrfpfJfn4l0zDdvKFer1dxE2xsxdr8ZGBio7k1&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F96E2703" />
+	<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+	<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKNw86EBwLd+smmCgLv78W8CQK/g6HTBvarnT78cNKK1yd7I4T1nZPHcK3b" />
+</div>
+    
+    
+<script type='text/javascript'>
+//<![CDATA[
+    var r = Math.random();
+    var t = new Date();
+	var URL = '%2f_LM_W3SVC_2_ROOT%2fRoot%2fStart%2frettskilder%2fudi-interne-meldinger%2fim-2011-021';
+	var pageId = 1373;
+    var extra = '';
+    var ref = escape(document.referrer);
+		
+	if ( ref.length >= 100 ) ref = ref.substring( 0, 100 ) + '...';
+    var img = document.createElement('img');
+    img.style.position = 'absolute';
+    img.style.width = '1px';
+    img.style.height = '1px';
+    img.alt = '';
+    img.src = "/util/PixelImg.aspx" +
+			"?URL=" + URL + 
+			"&pageId=" + pageId +
+			"&referrer=" + ref +
+			"&extra=" + extra + 
+			"&t=" + t.getTime() + ";r=" + r;
+    document.body.appendChild(img);
+//]]>
+</script>
+<noscript>
+	<img style='width:1px; height: 1px; position:absolute;' alt='' src='/util/PixelImg.aspx?js=0&amp;URL=%2f_LM_W3SVC_2_ROOT%2fRoot%2fStart%2frettskilder%2fudi-interne-meldinger%2fim-2011-021&amp;extra=&amp;pageId=1373&amp;referrer=' />
+
+</noscript>
+    <div id="Page">
+        <div id="HeaderArea">
+            
+    <a class="MainLogo" href="/no/" title="Til startsiden">
+        <img src="/PageFiles/3/Nyprofil19.12.12/Logo_106_70px.PNG" alt="Til startsiden" /></a> <a class="MainLogoText" href="/no/" title="Til startsiden">
+            <img src="/PageFiles/3/Nyprofil19.12.12/udiregelverk.no.PNG" alt="Til startsiden" /></a>
+    <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/Styles/IE7.css" media="screen" /><![endif]-->
+    <div id="TopMenuArea">
+        
+  <script type="text/javascript"><!--
+      function OpenPrinterFriendlyWindow() {
+          var url = window.location.href + (window.location.href.indexOf('?') == -1 ? "?" : "&") + "print=1";
+          window.open(url);
+      }
+		--></script>
+
+    <script type="text/javascript"><!--
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+        }
+//--></script>
+    
+    
+            <ul>
+        
+            <li>
+                <a id="ctl00_PageHeader_TopMenu_rptRelatedLinks_ctl01_hplMainLink" title="Gå til Personvern" href="/no/Informasjonskapsler/">Personvern</a>
+            </li>
+        
+            <li>
+                <a id="ctl00_PageHeader_TopMenu_rptRelatedLinks_ctl02_hplMainLink" title="Gå til Arkiv" href="/no/arkiv/">Arkiv</a>
+            </li>
+        
+            <li>
+                <a id="ctl00_PageHeader_TopMenu_rptRelatedLinks_ctl03_hplMainLink" title="Gå til Nettstedskart" href="/no/nettstedskart/">Nettstedskart</a>
+            </li>
+        
+            <li>
+                <a id="ctl00_PageHeader_TopMenu_rptRelatedLinks_ctl04_hplMainLink" title="Gå til Kontakt oss" href="/no/kontakt-oss/">Kontakt oss</a>
+            </li>
+        
+            <li class="last">
+                <img src="/Images/print.png" title='Skriv ut' alt='Skriv ut' onclick="OpenPrinterFriendlyWindow();" style="cursor:pointer;" />
+            </li>
+            <li class="lastprint" title='Skriv ut' onclick="OpenPrinterFriendlyWindow();" style="cursor: pointer;">
+                <span title="Skriv ut">Skriv ut</span>
+            </li>
+            <li class="Zoom">
+                <div id="Scaler">
+                    <img onclick="toggle_visibility('foo');" src="/Images/scalar.png" title="Endre tekststørrelse" alt="Endre tekststørrelse" />
+                </div>
+                <div id="foo" style="display:none;" onclick="toggle_visibility('foo');">
+                    <div class="fontsize-howto" style="display: block;"><button class="close minimal">× Skjul veiledningen</button>
+<p>For å justere tekststørrelsen, bruk nettleserens innebygde zoomfunksjon. Skriftstørrelsen kan da økes med hurtigtastene <strong><kbd>Ctrl</kbd></strong>+<strong><kbd>+</kbd></strong> og reduseres med <strong><kbd>Ctrl</kbd></strong>+<strong><kbd>-</kbd></strong>.</p>
+<p class="t"><strong>Alternativt</strong></p>
+<dl><dt><strong>Internett Explorer</strong></dt><dd>Velg fanen <strong>Vis</strong> → <strong>Tekststørrelse</strong> → Velg en av de tilgjengelige størrelsene.</dd><dt><strong>Mozilla Firefox</strong></dt><dd>Velg fanen <strong>Vis</strong> → <strong>Skalering</strong> → Velg <strong>Større</strong> eller <strong>Mindre</strong> skrift.</dd><dt><strong>Opera</strong></dt><dd>Velg <strong>Opera-ikon</strong> → <strong>Side</strong> → <strong>Zoom</strong> → Velg størrelse.</dd><dt><strong>Chrome</strong></dt><dd>Velg <strong>Verktøy-ikon</strong> → Ved <strong>Zoom</strong>, klikk <strong>+</strong> og <strong>-</strong>.</dd><dt><strong>Safari</strong></dt><dd>Velg <strong>Side-ikon</strong> → <strong>Zoom</strong> → Velg <strong>Zoom inn</strong> eller <strong>Zoom ut</strong>.</dd></dl><button class="close minimal">× Skjul veiledningen</button></div>
+                </div>
+            </li>
+            </ul>
+        
+    <div class="Language">
+        <a id="ctl00_PageHeader_TopMenu_Language" title="Bytt til engelsk" class="languageButton" href="/en/documents/udi-internal-practices/im-2011-021/"><img title="Bytt til engelsk" src="/Images/EN.png" alt="English" style="border-width:0px;" /></a>
+        
+        
+        <noscript>
+            
+        </noscript>
+    </div>
+    </div>
+
+
+            
+        </div>
+        <div id="MainMenuArea">
+            
+
+<ul class="menu">
+    <li id="menuRettskildeli"><span id="ctl00_MainMenu_MenuItemRettskilder" class="menuItemText">Rettskilder</span>
+        <div class="dropdown_3columns">
+            <div id="SentraltRegelverkArea">
+                    <h2><span id="ctl00_MainMenu_SentraltRegelverkHeading">Sentralt regelverk</span></h2>
+
+                    
+                            <ul class="SubMenu">
+                        
+                            <li><a href="/no/rettskilder/sentrale/utlendingsloven/">Utlendingsloven</a></li>
+                        
+                            <li><a href="/no/rettskilder/sentrale/utlendingsforskriften/">Utlendingsforskriften</a></li>
+                        
+                            <li><a href="/no/rettskilder/sentrale/statsborgerloven/">Statsborgerloven</a></li>
+                        
+                            <li><a href="/no/rettskilder/sentrale/statsborgerforskriften/">Statsborgerforskriften</a></li>
+                        
+                            <li><a href="/no/rettskilder/sentrale/utlendingsloven-engelsk/">Immigration Act</a></li>
+                        
+                            <li><a href="/no/rettskilder/sentrale/Immgration_Regulations/">Immigration Regulations</a></li>
+                        
+                            </ul>
+                        
+
+                </div>
+                <div id="OvrigeRettskilderArea">
+                    <h2><span id="ctl00_MainMenu_AndreRettskilderLabel">Øvrige rettskilder</span></h2>
+                    <div class="OvrigeRettskilderAreaCol1">
+                        
+                                <ul class="SubMenu">
+                            
+                                <li><a href="/no/rettskilder/andre-lover/">Andre lover</a></li>
+                            
+                                <li><a href="/no/rettskilder/andre-forskrifter/">Andre forskrifter</a></li>
+                            
+                                <li><a href="/no/rettskilder/eos-rettskilder/">EU og EØS</a></li>
+                            
+                                <li><a href="/no/rettskilder/schengen/">Schengen</a></li>
+                            
+                                <li><a href="/no/rettskilder/forarbeider/">Forarbeider</a></li>
+                            
+                                <li><a href="/no/rettskilder/hoyesterettsavgjorelser/">Høyesterettsavgjørelser</a></li>
+                            
+                                <li><a href="/no/rettskilder/underrettsavgjorelser/">Underrettsavgjørelser</a></li>
+                            
+                                <li><a href="/no/rettskilder/emd-avgjorelser/">EMD sammenfatninger</a></li>
+                            
+                                <li><a href="/no/rettskilder/eu-domstolens-rettspraksis/">EU-domstolens rettspraksis </a></li>
+                            
+                                <li><a href="/no/rettskilder/internasjonale-konvensjoner-og-avtaler/">Internasjonale konvensjoner og avtaler</a></li>
+                            
+                                <li><a href="/no/rettskilder/bilaterale-avtaler/">Bilaterale avtaler</a></li>
+                            
+                                </ul>
+                            
+                    </div>
+                    <div class="OvrigeRettskilderAreaCol2">
+                        
+                                <ul class="SubMenu">
+                            
+                                <li><a href="/no/rettskilder/unhcr-anbefalinger/">UNHCR anbefalinger</a></li>
+                            
+                                <li><a href="/no/rettskilder/departementets-rundskriv-og-instrukser/">Departementenes rundskriv og instrukser</a></li>
+                            
+                                <li><a href="/no/rettskilder/udi-rundskriv/">UDI rundskriv</a></li>
+                            
+                                <li><a href="/no/rettskilder/udi-interne-meldinger/">UDI internmeldinger</a></li>
+                            
+                                <li><a href="/no/rettskilder/udi-praksisnotater/">UDI praksisnotater</a></li>
+                            
+                                <li><a href="/no/rettskilder/easo-country-guidance-notes-cgn/">EASO Country Guidance Notes</a></li>
+                            
+                                <li><a href="/no/rettskilder/andre-relevante-rundskriv/">Andre etaters rundskriv og brev</a></li>
+                            
+                                <li><a href="/no/rettskilder/horinger/">Høringer</a></li>
+                            
+                                <li><a href="/no/rettskilder/prosedyrer-veiledninger/">Prosedyrer og veiledninger</a></li>
+                            
+                                <li><a href="/no/rettskilder/samlesider-om-sarbare-sokere/">Samlesider om sårbare søkere</a></li>
+                            
+                                </ul>
+                            
+                    </div>
+
+
+                </div>
+
+        </div>
+    
+    </li>
+
+    <li><span id="ctl00_MainMenu_MenuItemEmne" class="menuItemText">Emner</span>
+        <div class="dropdown_2columns">
+            <div id="EmnerArea">
+                <h2><span id="ctl00_MainMenu_EmneHeadingLabel">Emner</span></h2>
+                <div class="EmnerAreaCol1">
+                    
+                            <ul class="SubMenu">
+                        
+                            <li><a href="/no/emner/arbeid/">Arbeid</a></li>
+                        
+                            <li><a href="/no/emner/asylmottak/">Asylmottak</a></li>
+                        
+                            <li><a href="/no/emner/bortvisning/">Bortvisning</a></li>
+                        
+                            <li><a href="/no/emner/beskyttelse-asyl/">Beskyttelse (asyl)</a></li>
+                        
+                            <li><a href="/no/emner/eos-oppholdssaker/">EØS oppholdssaker</a></li>
+                        
+                            <li><a href="/no/emner/identitet/">Identitet</a></li>
+                        
+                            <li><a href="/no/emner/familieinnvandring/">Familieinnvandring</a></li>
+                        
+                            <li><a href="/no/emner/kjonnslemlestelse/">Kjønnslemlestelse</a></li>
+                        
+                            <li><a href="/no/emner/kontroll-med-inn-og-utreise/">Kontroll med inn- og utreise</a></li>
+                        
+                            <li><a href="/no/emner/menneskehandel/">Menneskehandel</a></li>
+                        
+                            <li><a href="/no/emner/norsk-statsborgerskap/">Norsk statsborgerskap</a></li>
+                        
+                            <li><a href="/no/emner/permanent-oppholdstillatelse/">Permanent oppholdstillatelse</a></li>
+                        
+                            </ul>
+                        
+                </div>
+                <div class="EmnerAreaCol2">
+                    
+                            <ul class="SubMenu">
+                        
+                            <li><a href="/no/emner/personvern/">Personvern</a></li>
+                        
+                            <li><a href="/no/emner/reisedokumenter/">Reisedokumenter</a></li>
+                        
+                            <li><a href="/no/emner/retur-og-tilbakevending/">Retur og tilbakevending</a></li>
+                        
+                            <li><a href="/no/emner/saksbehandling/">Saksbehandling</a></li>
+                        
+                            <li><a href="/no/emner/sterke-menneskelige-hensyn/">Sterke menneskelige hensyn eller særlig tilknytning til riket</a></li>
+                        
+                            <li><a href="/no/emner/tilbakekall/">Tilbakekall</a></li>
+                        
+                            <li><a href="/no/emner/tvangsekteskap/">Tvangsekteskap</a></li>
+                        
+                            <li><a href="/no/emner/udi-rutiner/">UDI rutiner</a></li>
+                        
+                            <li><a href="/no/emner/utdanning/">Utdanning</a></li>
+                        
+                            <li><a href="/no/emner/utvisning/">Utvisning</a></li>
+                        
+                            <li><a href="/no/emner/visum/">Visum</a></li>
+                        
+                            </ul>
+                        
+
+                
+                </div>
+
+
+            </div>
+        </div>
+    </li>
+</ul>
+            <div id="ctl00_QuickSearch_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_QuickSearch_btnQuickSearch')">
+	
+    <div id="QuickSearchPanel">
+        <input name="ctl00$QuickSearch$txtQuickSearch" type="text" id="ctl00_QuickSearch_txtQuickSearch" tabindex="1" title="Søk i Regelverksportalen" class="quickSearchField" />
+        <input type="hidden" name="ctl00$QuickSearch$txtWatermark_TextBoxWatermarkExtender_ClientState" id="ctl00_QuickSearch_txtWatermark_TextBoxWatermarkExtender_ClientState" />
+        <input type="submit" name="ctl00$QuickSearch$btnQuickSearch" value="Søk" id="ctl00_QuickSearch_btnQuickSearch" title="Søk" class="quickSearchButton" />
+    </div>
+
+</div>
+
+        </div>
+        <div id="MainAreaFrame">
+            
+                <div id="MainArea">
+                    <div id="ctl00_ContentPlaceHolderMainAreaFrame_BreadCrumbArea" class="BreadCrumbArea">
+                        <ul id="breadcrumb"><li class="first"><a href="/no/">Start</a></li><li><a href="/no/rettskilder/">Rettskilder</a></li><li><a href="/no/rettskilder/udi-interne-meldinger/">UDI internmeldinger</a></li><li class="selected">IM 2011-021</li></ul>
+                    </div>
+                    
+                    
+                    
+    <div id="ArticleRightColLeftArea" class="">
+        
+
+        
+    <script type="text/javascript">
+	    function hideMeIfNoChildren(selector) {
+		    var myLittleElement = $(selector);
+
+
+		    if ($.trim(myLittleElement.children().html()) == '') {
+		        $(selector).attr("style", "display: none;");
+		    }
+
+	    }
+    </script>
+    
+    <script type="text/javascript">
+        hideMeIfNoChildren(".FrontPageInfoBoxLeftTop");
+    </script>
+        
+
+        
+<div class="post">
+    <h2>
+        UDI internmeldinger</h2>
+</div>
+<div id="ctl00_ContentPlaceHolderMainAreaFrame_Content_ArticleMainBody1_pnlIntroBody">
+	
+    <div class="post_data">
+        <div class="hidden">
+            <img alt="Attachment" src="../../../../Images/attachment.png" />
+            <a href="#attachment">Snarvei til vedlegg</a>
+        </div>
+        <div class="hidden">
+            <a id="ctl00_ContentPlaceHolderMainAreaFrame_Content_ArticleMainBody1_linkNo"> 
+                <img id="ctl00_ContentPlaceHolderMainAreaFrame_Content_ArticleMainBody1_flagNo" alt="flag" title="This document is available in norwegian" />
+            </a>
+        </div>
+        <div class="hidden">
+            <a id="ctl00_ContentPlaceHolderMainAreaFrame_Content_ArticleMainBody1_linkEn">
+                <img id="ctl00_ContentPlaceHolderMainAreaFrame_Content_ArticleMainBody1_flagEn" alt="flag" title="Dette dokumentet er tilgjengelig på engelsk" />
+            </a>
+        </div>
+        <div id="ctl00_ContentPlaceHolderMainAreaFrame_Content_ArticleMainBody1_LawSourceProps1_PropertyBox" class="PagePropertyBox">
+    <img src="/Global/Logoer/Logoer%20UDI/Logo%20UDI%20norsk%20print.gif" alt="IM 2011-021" /><table>
+        <col style="width: 110px;" />
+        <col />
+        <tr>
+		<td class="TableBold">
+                Dokument-ID
+                :
+            </td>
+		<td class="TableBold">
+                IM 2011-021
+            </td>
+	</tr>
+	
+        
+        <tr>
+		<td class="TableBold">
+                Saksnummer
+                :
+            </td>
+		<td>
+                11/2877-3
+            </td>
+	</tr>
+	
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr>
+		<td class="TableBold">
+                Dokumentdato
+                :
+            </td>
+		<td>
+                26.09.2011
+            </td>
+	</tr>
+	
+        <tr>
+		<td class="TableBold">
+                Mottakere
+                :
+            </td>
+		<td>
+                <div>
+			<p>Region- og mottaksavdeling</p>
+		</div>
+            </td>
+	</tr>
+	
+        
+
+        
+    </table>
+</div>
+
+        <h1>
+            <span>Rutiner for behandling av søknader om tilbakevendingsstøtte</span>
+        </h1>
+        
+        <div>
+		<p><a name="_Toc121121531"></a><a name="_Toc304534784"></a><a name="_Toc303929304"></a><a name="_Toc121125919"></a><a href="#_Toc304535519">1. Innledning</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535520">1.1 Målgruppe for tilbakevendingsprogrammet</a></p>
+</blockquote>
+<p><a href="#_Toc304535521">2. Ansvar for behandling av søknader om tilbakevendingsstøtte</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535522">2.1 Organisering av reise</a></p>
+<p><a href="#_Toc304535523">2.2 Registrering i DUF</a></p>
+</blockquote>
+<p><a href="#_Toc304535524">3. Krav til søknaden</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535525">3.1 Reisedokumenter</a></p>
+<p><a href="#_Toc304535526">3.2 Medisinsk eskorte</a></p>
+</blockquote>
+<p><a href="#_Toc304535527">4. Behandling av søknaden</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535528">4.1. Tilbakevendingsstøtte til personer med gjeldsforpliktelser i Norge</a></p>
+</blockquote>
+<p><a href="#_Toc304535529">5. Bestilling av billetter</a></p>
+<p><a href="#_Toc304535530">6. Innvilgelse av søknad om tilbakevendingsstøtte</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535531">6.1 Muligheter for assistanse på Gardermoen</a></p>
+<p><a href="#_Toc304535532">6.2 Bagasje</a></p>
+<p><a href="#_Toc304535533">6.3 Utlendingspass for enkeltreise ved tilbakevending</a></p>
+<p><a href="#_Toc304535534">6.4 Reise til og fra flyplass</a></p>
+</blockquote>
+<p><a href="#_Toc304535535">7. Utbetaling av støttebeløp</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535536">7.1 Utbetalingsanmodning til regnskapskontoret</a></p>
+<p><a href="#_Toc304535537">7.2 Flyttemelding til folkeregisteret</a></p>
+<p><a href="#_Toc304535538">7.3 Registrere utreise i DUF</a></p>
+</blockquote>
+<p><a href="#_Toc304535539">8. Egenorganisert reise</a></p>
+<blockquote dir="ltr" style="margin-right: 0px;">
+<p><a href="#_Toc304535540">8.1 Tilleggssatser for egenorganisert reise</a></p>
+</blockquote>
+<h2><a name="_Toc304535519">1. </a>Innledning</h2>
+<p>Norske myndigheter gir økonomisk støtte til flyktninger som ønsker å vende tilbake til hjemlandet. Ordningen administreres av Utlendingsdirektoratet (UDI). Formålet med støtten er å legge forholdene til rette slik at flyktninger i Norge, på frivillig grunnlag, skal kunne vende tilbake og bosette seg permanent i hjemlandet. Ordningen er gjort rede for i <a target="_blank" href="/en/archive/udi-circulars/rs-2004-035/" title="RS 2004-035 ">RS 2004-035 </a>Individuell støtte ved tilbakevending til hjemlandet.</p>
+<p>
+</p><p>Denne internmeldingen faster rutiner for saksbehandling av søknad om støtte til tilbakevending i Region- og mottaksavdelingen (RMA).</p>
+<p>
+</p><h3><a name="_Toc304535520"></a><a name="_Toc304534785"></a><a name="_Toc303929305">1.1 Målgruppe for tilbakevendingsprogrammet</a></h3>
+<p>Alle personer som<strong> har fått innvilget </strong>beskyttelse (asyl), kollektiv beskyttelse eller oppholdstillatelse på grunn av sterke menneskelige hensyn (humanitært grunnlag) kan søke om tilbakevendingsstøtte, dersom de ønsker å vende tilbake og bosette seg i sitt hjemland. Også personer som har fått innvilget familieinnvandring med en person som tilhører en av disse gruppene, kan få støtte.</p>
+<p>
+</p><p>For å søke tilbakevendingsstøtte må man ha bodd i Norge i mer enn tre måneder fra ankomsttidspunkt. Som hovedregel skal flyktninger søke om støtte til tilbakevending mens de oppholder seg i Norge. Det er unntak fra denne regelen for personer fra Bosnia-Hercegovina. Søknad om etterbetalt støtte må være regionkontoret i hende innen 12 måneder fra flyttedato til hjemlandet. Vanlig søknadsskjema benyttes. Støtte til reiseutgifter etterbetales ikke. Kopi av melding om flytting til folkeregisteret må også vedlegges.</p>
+<p>
+</p><p>Personer som har blitt norske statsborgere, vil normalt ikke få støtte til tilbakevending. Det er imidlertid mulig å søke om unntak ut fra menneskelige eller samfunnsmessige hensyn.<a name="_ftnref1" href="#_ftn1">[1]</a></p>
+<p>
+</p><h2><a name="_Toc304535521"></a><a name="_Toc304534786"></a><a name="_Toc303929306">2. Ansvar for behandling av søknader om tilbakevendingsstøtte</a></h2>
+<p>UDI regionkontorer fatter vedtak i søknad om tilbakevendingsstøtte. Søknad om økonomisk støtte til tilbakevending behandles av regionkontoret i den regionen søker bor i. Søknadsskjemaene er oversatt til flere språk, og kan lastes ned fra UDIs nettsider.<a name="_ftnref2" href="#_ftn2">[2]</a></p>
+<h3><a name="_Toc304535522"></a><a name="_Toc304534787"></a><a name="_Toc303929307">2.1 Organisering av reise</a></h3>
+<p>Alle reiser som organiseres av UDI foregår i et samarbeid med International Organization for Migration (IOM). Regionkontor Sør er koordinerende kontor for reisearrangement og ansvarlig for å bestille alle reiser via IOM.</p>
+<h3><a name="_Toc304535523"></a><a name="_Toc304534788"></a><a name="_Toc303929308">2.2 Registrering i DUF</a></h3>
+<p>Det er utarbeidet egne brukerveiledninger for hvordan men registrerer og saksbehandler søknader om støtte til tilbakevending. DUF brukerveiledninger</p>
+<p>
+</p><h2><a name="_Toc304535524"></a><a name="_Toc304534789"></a><a name="_Toc303929309">3. Krav til søknaden</a></h2>
+<p>Flyktningen skal fylle ut og undertegne skjemaet ”Søknad om økonomisk støtte til frivillig tilbakevending til hjemlandet”.</p>
+<p>
+</p><ul>
+<li>Søknaden skal undertegnes av begge ektefeller, dersom begge skal reise. </li>
+<li>Barn over 18 år skal fylle ut sitt eget skjema. </li>
+<li>Kopi av gyldig pass fra hjemlandet vedlegges </li>
+<li>Søknaden skal sendes pr post, i original, til ansvarlig regionkontor. </li>
+<li>Legeerklæring for vurdering av transportdyktighet og eventuelt medisinsk eskorte dersom personen er syk </li>
+<li>Dersom mindreårige flytter fra Norge med en av foreldrene skal det vedlegges fullmakt fra den av foreldrene som eventuelt ikke velger å reise hjem.</li>
+</ul>
+<h3><a name="_Toc121121534"></a><a name="_Toc121125922"></a><a name="_Toc304535525"></a><a name="_Toc304534790"></a><a name="_Toc303929310">3.1 Reisedokumenter</a></h3>
+<p>Programmet for tilbakevending forutsetter at hjemreisen foregår med eget hjemlands pass.</p>
+<p>I helt spesielle tilfeller kan norske myndigheter utstede reisedokumenter for flyktninger som ønsker å vende tilbake til land, hvor det enten ikke finnes noen hjemlands myndighet som kan utstede pass til sine borgere eller i tilfeller hvor hjemlandets myndigheter av ulike årsaker ikke kan eller vil utstede pass. Personer som er kvalifisert for tilbakevendingsprogrammet kan i noen tilfeller få innvilget Utlendingspass for en enkeltreise. Personen må da fremme søknad om Utlendingspass for tilbakevending via politiet, må vanlig måte. Utgifter til Utlendingspass må bekostes av den enkelte.</p>
+<p>
+</p><h3><a name="_Toc304535526"></a><a name="_Toc304534791"></a><a name="_Toc303929311">3.2 Medisinsk eskorte</a></h3>
+<p>Dersom søker til tilbakevendingsprogrammet har behov for medisinsk eskorte på reisen må behandlende lege utstede legeerklæring på engelsk. Denne legges som vedlegg til søknaden. Legen må også vurdere om personen er transportdyktig for en flyreise. Det er IOM som tar endelig beslutning om det vil være mulig og forsvarlig å eskortere personen hjem. IOM benytter egne leger, sykepleier eller ansatte til slike reiser.</p>
+<p>
+</p><p>UDI dekker ikke reise for familiemedlemmer, som av ulike årsaker ønsker å følge flyktningen hjem.</p>
+<p>
+</p><h2><a name="_Toc304535527"></a><a name="_Toc304534792"></a><a name="_Toc303929312">4. Behandling av søknaden</a></h2>
+<p>Når regionkontoret mottar søknad om støtte til tilbakevending til hjemlandet registreres søknaden umiddelbart i DUF. Start arbeidsprosessen ”UDI registrerer TBV-søknad”. Saksbehandlingstid for søknad om støtte til tilbakevending er normalt mellom fire til seks uker, avhengig av om søknaden er komplett når den er mottatt.</p>
+<p>
+</p><p>Regionkontoret må som del av saksbehandlingen sjekke følgende:</p>
+<p>
+</p><ul>
+<li>at søker tilhører en av de grupper som nevnt under punkt 1.1 </li>
+<li>at søker har vedlagt de nødvendige vedlegg til søknaden </li>
+<li>om søker ønsker at UDI skal organisere hjemreisen, eller om det er fremsatt ønske om å gjøre dette på egenhånd</li>
+</ul>
+<p>
+</p><p>Dersom søker er kvalifisert for tilbakevendingsprogrammet, sender regionkontoret brev til hjemstedskommune, Husbanken og Statens lånekasse for utdanning (Lånekassen) for å orientere om at flyktningen planlegger å vende tilbake til sitt hjemland. Start aktiviteten ”UDI behandler TBV-søknad” i DUF. Aktivitetstrinnet ”Skriv melding til kommunen, husbanken og Lånekassen” er obligatorisk og her ligger brevmalen som skal benyttes. I brevet blir kommunen, Husbanken og Lånekassen gitt en frist på 14 dager til å uttale seg om de har økonomiske mellomværende med søkeren, eller om de av andre tungtveiende grunner finner å måtte kontakte søkeren. Dersom regionkontoret ikke blir kontaktet innen to uker fra brevets dato, kan man regne med at kommunen, Husbanken og Lånekassen har tatt brevets orientering til etterretning og ikke finner det nødvendig å sette seg i kontakt med søkeren.</p>
+<p>
+</p><h3><a name="_Toc304535528"></a><a name="_Toc304534793"></a><a name="_Toc303929313">4.1. Tilbakevendingsstøtte til personer med gjeldsforpliktelser i Norge</a></h3>
+<p>Dersom en eller flere av de offentlige kreditorene gir melding til regionkontoret om søker har gjeldsforpliktelser, utsettes utbetaling av støttebeløp og hjemreisen inntil søkeren har inngått avtale med kreditor. Melding om eventuelle utsettelser gis videre til Regionkontor Sør som er ansvarlig for bestilling av reiser. Lånekassen har sine egne rutiner for oppfølging av personer med gjeld til Statens lånekasse for utdanning, og regionkontoret trenger ikke vente på bekreftelse på at søker og lånekassen eventuelt har inngått en avtale.</p>
+<p>
+</p><h2><a name="_Toc304535529"></a><a name="_Toc304534794"></a><a name="_Toc303929314">5. Bestilling av billetter</a></h2>
+<p>Når søknaden er klar for billettbestilling, skal regionkontoret gjøre de nødvendige registreringer i DUF. Benytt trinnet registrer billettbestilling og saken overføres elektronisk til Regionkontor Sør. I tillegg skal selve søknaden og nødvendige vedlegg skannes og sendes pr. epost til Regionkontor Sør. Vanlig post kan også benyttes.</p>
+<p>
+</p><p>Regionkontor Sør kontrollerer søknaden og registreringen i DUF, så ekspederes billettbestillingen videre til IOM.</p>
+<p>
+</p><p>Når endelig avreisedato foreligger fra IOM, registrerer Regionkontor Sør reiseruten i DUF. Saken overføres elektronisk tilbake til ansvarlig regionkontor for innvilgelse av søknad. Regionkontor Sør sender også en kopi av reiseruten via epost til regionkontoret.</p>
+<p>
+</p><h2><a name="_Toc304535530"></a><a name="_Toc304534795"></a><a name="_Toc303929315">6. </a>Innvilgelse av søknad om tilbakevendingsstøtte</h2>
+<p>Når regionkontoret har fått melding om avreisedato fra Regionkontor Sør, kan søknad om støtte til tilbakevending innvilges. Fristene er ofte korte, slik at søknadsbehandlingen må håndteres raskt. Regionkontoret registrerer utreisedato i DUF i aktivitetstrinnet ”Registrer innvilget TBV-søknad” og kontrollerer samtidig at støttebeløp er korrekt. Neste aktivitetstrinn i DUF er ”Skriv brev om innvilgelse”. Regionkontoret kontrollerer at innholdet i brevet er riktig, fyller ut informasjon om billetter, og eventuelle nødvendige opplysninger om avreisen. Antall kilo bagasje som kan medbringes på reisen, må også fylles ut. Når brevet er ferdig redigert, sendes vedtaket til søker. Husk å legge ved kopi av reiseruten, som regionkontoret har fått tilsendt av Regionkontor Sør.</p>
+<p>
+</p><h3><a name="_Toc304535531"></a><a name="_Toc304534796"></a><a name="_Toc303929316">6.1 Muligheter for assistanse på Gardermoen</a></h3>
+<p>Ved avreiser fra eller via Gardermoen er det mulig å få assistanse fra Norsk Folkehjelps mottakstjeneste. For assistanse eller overnatting i forbindelse med utreise fra Gardermoen må regionkontoret gi melding pr epost om dette til Regionkontor Sør så tidlig som mulig, men senest tre dager før avreise. Regionkontor Sør kontakter Norsk Folkehjelp.</p>
+<p>
+</p><h3><a name="_Toc304535532"></a><a name="_Toc304534797"></a><a name="_Toc303929317">6.2 Bagasje</a></h3>
+<p>Som hovedregel kan man ved slike reiser ta med seg inntil 30 kilo bagasje. Dette kan imidlertid variere noe, og er avhengig av hvilke avtaler IOM har med det enkelte flyselskap. Regionkontor Sør videreformidler opplysninger om antall kilo bagasje.</p>
+<p>
+</p><p>Barn under 2 år har som regel ikke eget flysete. Det betyr at man heller ikke får med seg det antall kilo bagasje som ellers er beregnet pr. reisende. Flyktningen selv er ansvarlig for å betale for eventuell overvekt på flyet. På innenlands flyvninger i Norge kan det være andre regler for antall kilo bagasje.</p>
+<p>
+</p><h3><a name="_Toc304535533"></a><a name="_Toc304534798"></a><a name="_Toc303929318">6.3 Utlendingspass for enkeltreise ved tilbakevending</a></h3>
+<p>Dersom personen har fått innvilget et Utlendingspass for en enkeltreise i forbindelse med tilbakevending til hjemlandet, vil reisedokumentet først bli utlevert før avreise på Gardermoen, av IOM.</p>
+<p>
+</p><h3><a name="_Toc304535534"></a><a name="_Toc304534799"></a><a name="_Toc303929319">6.4 Reise til og fra flyplass</a></h3>
+<p>Reise fra hjemkommune i Norge til nærmeste flyplass må organiseres og bekostes av personen selv.</p>
+<p>
+</p><p>Ved ankomst flyplass i hjemlandet, må personen som hovedregel også organisere og bekoste dette selv. IOM er ansvarlig for organiseringen av reisen til ankomstflyplass i hjemlandet, og kun i noen tilfeller organiserer IOM reisen fra ankomstflyplass til endelig bestemmelsessted. Det vil bli gitt informasjon om dette før avreise fra Norge dersom dette er en del av reisearrangementet.</p>
+<p>
+</p><h2><a name="_Toc304535535"></a><a name="_Toc304534800"></a><a name="_Toc303929320">7. </a>Utbetaling av støttebeløp</h2>
+<p>Tilbakevendingsstøtte kan ikke utbetales før IOM har fastsatt en avreisedato. Støtten skal som hovedregel ikke utbetales mer en 14 dager før avreise.</p>
+<p>
+</p><p>Tilbakevendingsstøtte til personer med gjeldsforpliktelser i Norge, kan innvilges dersom flyktningen har inngått avtale med sine offentlige kreditorer.</p>
+<p>
+</p><p>Personer som trekker sin søknad underveis i søknadsprosessen må melde skriftlig fra om dette til regionkontoret. Det er egen arbeidsprosess for trukket søknad i DUF.</p>
+<p>
+</p><h3><a name="_Toc303929321">7.1 Utbetalingsanmodning til regnskapskontoret</a></h3>
+<p>Regionkontoret finner brevmal for utbetaling av støttebeløpet i DUF under aktiviteten UDI innvilger TBV-søknad. Brevmalen heter ”Utbetalingsanmodning til ADA”, og finnes i aktivitetstrinnet ”Skriv utbetalingsanmodning” i DUF. I utbetalingsanmodningen er det noen felt som må fylles ut manuelt. Sjekk at adressen til den som skal ha utbetalt støttebeløpet er riktig. Fyll så ut vedkommendes bankkontonummer. Et merknadsfelt kan benyttes for opplysninger til regnskapskontoret. Utbetalingsanmodningen skal konteres, da dette også er en utbetalingsanvisning til Regnskapskontoret.</p>
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;">
+<tbody>
+<tr style="page-break-inside: avoid;">
+<td width="61" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; background: silver; padding-bottom: 0cm; border-left: windowtext 1.5pt solid; width: 46.1pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong>Konto:</strong><strong> </strong></p>
+</td>
+<td width="64" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; padding-bottom: 0cm; border-left: medium none; width: 48pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong> </strong><strong> </strong></p>
+</td>
+<td width="69" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; background: silver; padding-bottom: 0cm; border-left: medium none; width: 51.75pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong>K-sted:</strong><strong> </strong></p>
+</td>
+<td width="58" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; padding-bottom: 0cm; border-left: medium none; width: 43.65pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong> </strong></p>
+</td>
+<td width="76" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; background: silver; padding-bottom: 0cm; border-left: medium none; width: 2cm; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong>Prosjekt:</strong><strong> </strong></p>
+</td>
+<td width="63" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; padding-bottom: 0cm; border-left: medium none; width: 47.4pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong> </strong></p>
+</td>
+<td width="89" valign="top" style="border-right: windowtext 1pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; background: silver; padding-bottom: 0cm; border-left: medium none; width: 66.55pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong>Tot. beløp:</strong><strong> </strong></p>
+</td>
+<td width="129" valign="top" style="border-right: windowtext 1.5pt solid; padding-right: 3.5pt; border-top: windowtext 1.5pt solid; padding-left: 3.5pt; padding-bottom: 0cm; border-left: medium none; width: 96.95pt; padding-top: 0cm; border-bottom: windowtext 1.5pt solid;">
+<p><strong> </strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>Konto: 7210</p>
+<p>K-sted: Regionkontorets kostnadssted</p>
+<p>Prosjekt: Landkode</p>
+<p>Totalbeløp: Vil fremkomme automatisk, men påse at beløpet er riktig.</p>
+<p>
+</p><p>Når alle opplysninger er korrekt utfylt, skrives utbetalingsanmodningen ut. Deretter lagres dokumentet i DUF. Utbetalingsanmodningen attesteres og anvises av bemyndigede ved regionkontoret. Deretter skannes dokumentet inn og sendes i undertegnet stand via epost til rette vedkommende på Regnskapskontoret. Utbetalingsanmodningen arkiveres i saksmappen.</p>
+<p>Dokumentet lagres under aktivtetstrinnet ”Registrer korrespondanse”, deretter velger man trinnet ”Overfør saken til ADA (regnskapskontoret), som vil utbetale støttebeløpet til oppgitt bankkontonummer. Regnskapskontoret fyller ut støttebeløp og utbetalingsdato i DUF, registrerer i DUF og overfører saken tilbake til regionkontoret via DUF.</p>
+<p>
+</p><h3><a name="_Toc303929322">7.2 Flyttemelding til folkeregisteret</a></h3>
+<p>Flytting til utlandet må meldes til folkeregisteret før utreise, jfr. lov om folkeregistrering § 8.</p>
+<p>Kopi av bekreftelse fra folkeregisteret på at flyttemeldingen er levert, eller kopi av selve flyttemeldingen må være regionkontoret i hende før utbetaling av tilbakevendings­støtten. Kopi av flyttemeldingen arkiveres i saksmappen.</p>
+<p>
+</p><h3><a name="_Toc303929323">7.3 Registrere utreise i DUF</a></h3>
+<p>Regionkontor Sør får melding fra IOM om flyktningen har reist etter planen. Regionkontor Sør melder videre til regionkontoret, som registrer i vedkommende som utreist i DUF. Dette gjøres i aktivitetstrinnet ” Behandle TBV-utreise”. Utreise skal som hovedregel registres dagen etter personen har reist.</p>
+<p>
+</p><h2><a name="_Toc303929324">8. </a>Egenorganisert reise</h2>
+<p>Det er mulig å organisere sin egen hjemreise. Som hovedregel kan det innvilges støtte til egenorganisert reise til land hvor det er praktisk gjennomførbart. Støtte til egenorganisert reise må avklares med Regionkontor Sør, som tar dette opp med Returenheten.</p>
+<p>
+</p><ul type="square">
+<li>de som ønsker å organisere sin egen hjemreise angir dette på søknadsskjemaet ”Søknad om økonomisk støtte til tilbakevending til hjemlandet”. </li>
+<li>ved egenorganisert reise kreves samme dokumentasjon (transittvisa) som ved en reise arrangert av UDI/IOM. </li>
+<li>kopi av billetter for hjemreisen (fly, buss, tog), samt kopi av bekreftelse på flyttemelding fra folkeregisteret vedlegges søknadsskjema</li>
+</ul>
+<p>
+</p><h3><a name="_Toc303929325">8.1 Tilleggssatser for egenorganisert reise</a></h3>
+<p>Beløpet utbetales samtidig med tilbakevendingsstøtten:</p>
+<p>
+</p><ul type="square">
+<li>reise fra region Nord kr. 2.500,- </li>
+<li>reise fra region Midt-Norge og Vest kr. 2.250,- </li>
+<li>reise fra region Sør, Indre Østland og Oslo kr. 2.000,-</li>
+</ul>
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p><p> </p>
+<p>Anne Siri Rustad<br />avdelingsdirektør</p>
+<p>
+</p><p>Kontakt: <br />Region- og mottaksavdelingen, Regionkontor sør</p>
+<p>
+</p><p class="Rundskriv-hode">
+</p><p>
+</p><p>
+</p><div><br />
+<hr size="1" />
+<div id="ftn1">
+<p><a target="_blank" href="/no/rettskilder/udi-rundskriv/rs-1993-006/" title="RS 1993-006 ">[1]</a><a target="_blank" href="/no/rettskilder/udi-rundskriv/rs-1993-006/" title="RS 1993-006 ">RS 1993-006</a> Dispensasjonsregler for tildeling av tilbakevendingsstøtte til norske statsborgere som tidligere har hatt asyl eller oppholdstillatelse på humanitært grunnlag</p>
+</div>
+<div id="ftn2">
+<p><a name="_ftn2" href="#_ftnref2">[2]</a><a target="_blank" href="http://www.udi.no/Oversiktsider/Skjemaer-og-maler/Soknadsskjemaer/Tilbakevending/Soknadsskjema-for-okonomisk-stotte-til-tilbakevending-/" title="Søknadsskjema">Søknadsskjema</a></p>
+</div>
+</div>
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+        
+    </div>
+
+</div>
+
+    </div>
+    <div id="ArticleRightColRightArea">
+        
+
+        
+    <script type="text/javascript">
+        function hideMeIfNoChildren(selector) {
+            var myLittleElement = $(selector);
+
+
+            if ($.trim(myLittleElement.children().html()) == '') {
+                $(selector).attr("style", "display: none;");
+            }
+
+        }
+    </script>
+    
+    <script type="text/javascript">
+        hideMeIfNoChildren(".FrontPageInfoBoxRightBottom");
+    </script>
+
+    </div>
+
+                </div>
+            
+        </div>
+        <div id="FooterArea">
+            
+<div id="FooterColumns">
+    
+            <div id="FooterColumn1" class="FooterColumn">
+                <div>
+	<p style="text-align: left;"><strong>Utlendingsdirektoratet<br /></strong>Postboks 2098 Vika<br />0125 Oslo</p>
+</div>
+            </div>
+    
+             <div id="FooterColumn2" class="FooterColumn">
+                <div>
+	
+<p jquery1533642153703="1342" jquery1533642867133="1327" jquery1533642522827="1351"><a target="_blank" href="http://www.udi.no/Kontakt-oss/Opplysningstjenesten-i-UDI-OTS/" title="Kontakt UDI">Kontakt UDI</a></p>
+
+
+
+<p jquery1533642153703="1342" jquery1533642522827="1322"> </p>
+</div>
+            </div>
+    
+            <div id="FooterColumn3" class="FooterColumn">
+                <div>
+	
+
+<p jquery1370420846809="1321" jquery1370420594089="1322" jquery1374756955840="1323" jquery1515491378017="1330" jquery1369918839201="1329">Ansvarlig redaktør: Stephan Mo<br /><a href="mailto:udiregelverk@udi.no" title="Kontakt nettredaksjonen"><br /></a></p>
+
+<p> </p>
+</div>
+            </div>
+    
+    
+</div>
+
+        </div>
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=Rz9v69ALP_tUZsJgnJufHYlJhOeMGZRcn5N9chDJ_egSO0qPNUifF3e_L93PmPHyLdMu6DrQXLvIG588j5zmc-mMCNY1&amp;t=636271743501517547" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_QuickSearch_txtWatermark_TextBoxWatermarkExtender_ClientState","WatermarkText":"Søk i hele UDIregelverk","id":"ctl00_QuickSearch_txtWatermark_TextBoxWatermarkExtender"}, null, null, $get("ctl00_QuickSearch_txtQuickSearch"));
+});
+//]]>
+</script>
+</form>
+    <script type="text/javascript">
+        menuMain();
+    </script>
+</body>
+</html>
